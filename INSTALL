@@ -6,3 +6,9 @@ $ make test
 
 Install binary and man page to /usr/local:
 $ sudo make install
+
+## Prerequisite to build on macOS
+
+$ brew install openssl
+$ ln -s ../opt/openssl/include/openssl /usr/local/include
+$ export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
